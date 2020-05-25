@@ -18,7 +18,7 @@ class Grid:
                 for i in range(1, self.number_of_columns + 1):
                     for j in range(i+1, self.number_of_columns + 1):
                         print(f"  .{self.prefix}-{k}-{i}-{j} {{\n"
-                        f"    grid-column: {i} \ {j};\n"
+                        f"    grid-column: {i} / {j};\n"
                         f"  }}",file=out)
                 print(f"}}",file=out)
     
